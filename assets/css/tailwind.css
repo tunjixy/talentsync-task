@@ -50,7 +50,7 @@
 }
 .hero-pattern {
   background-image: url('/pattern/bg-pattern.svg');
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
