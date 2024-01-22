@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  html,
+  body {
+    @apply h-full;
+  }
+  body {
+    @apply antialiased bg-white font-Inter text-grey-500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 text-base font-semibold text-center text-white rounded-full bg-primary shadow-btn;
+  }
+  .btn-secondary {
+    @apply px-6 py-3 text-base font-semibold text-center text-gray-900 bg-white border rounded-full border-grey-400 shadow-btn;
+  }
+  .btn-arrow {
+    @apply flex items-center justify-center bg-white border border-blue-100 rounded-full size-14 shadow-btn;
+  }
+}
+
+#__nuxt {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@screen sm {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.hero-pattern {
+  background-image: url('/pattern/bg-pattern.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slide-nav-enter-active,
+.slide-nav-leave-active {
+  transition: all 0.2s ease-out;
+}
+.slide-nav-enter-from,
+.slide-nav-leave-to {
+  transform: translateX(-100%);
+}
+
+/* Accordion */
+.open .title {
+  @apply mb-3;
+}
+.open .content {
+  opacity: 1;
+  max-height: 1000px;
+}
