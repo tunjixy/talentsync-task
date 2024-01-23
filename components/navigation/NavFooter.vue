@@ -2,11 +2,9 @@
   <footer class="pt-24">
     <div class="container">
       <div
-        class="grid grid-cols-1 gap-8 pb-12 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8"
+        class="grid grid-cols-2 gap-8 pb-12 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-8"
       >
-        <div
-          class="col-span-1 sm:col-span-2 md:col-span-4 lg:col-span-5 xl:col-span-3"
-        >
+        <div class="col-span-2 md:col-span-4 lg:col-span-5 xl:col-span-3">
           <AppLogo />
           <p class="xl:max-w-[400px] mt-8 text-lg text-grey-600">
             ClearLink is your gateway to effortless, high-quality video
